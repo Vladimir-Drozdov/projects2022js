@@ -1,0 +1,185 @@
+
+@import "nullstyle.scss";
+/*.block{display: flex;}
+.block__body {
+   flex:1 1 auto;
+   min-width:0;//!!если слайдер содержится внутри flex-ЭЛЕМЕНТА, то ему нужно добавиь свойство min-width:0;
+}
+*/
+.wrapper{
+   padding: 30px 0px 30px 0px;
+   min-height: 100%;
+  // border:1px solid red;
+}
+.title{
+   font-size: 30px;
+   font-weight: 700;
+   color:white;
+   margin: 0px 0px 0px 0px;
+
+}
+.image-slider__image{
+   text-align: center;
+}
+.image-slider__image img{
+   max-width:100%;
+}
+
+//Стили стрелок
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+   color:red;
+   font-size: 80px;
+   
+}
+
+// стили буллетов
+.image-slider .swiper-pagination {
+   bottom: 0;
+}
+.image-slider .swiper-pagination-bullet{
+   width: 20px;
+   height: 20px;
+   line-height:20px;
+   font-size: 14px;
+   background-color: green;
+   border:1px solid black;
+}
+
+//Стили fraction
+.image-slider .swiper-pagination-fraction{
+   font-size: 20px;
+   color:red;
+}
+
+//Стили прогрессбара
+
+.image-slider .swiper-pagination-progressbar-fill{
+   background-color: #7a956b;
+}
+//Стили скролла
+.image-slider .swiper-scrollbar-drag{
+   cursor:pointer;
+   background-color: #7a956b;
+}
+
+//Автоматическая ширина слайдера
+.swiper-slide{
+   width: auto;
+}
+//Стили для мультирядности
+.image-slider{
+   height: 300px;
+ //  width:500px;
+
+}
+.image-slider .swiper-slide{
+   height: calc((100% - 30px)/1);
+   overflow:hidden;
+   border:1px solid red;
+}
+
+//Стили для слайдера миниатюры
+.image-mini-slider {
+}
+.image-slider {
+}
+.swiper {
+}
+.image-mini-slider__wrapper {
+}
+.swiper-wrapper {
+}
+.wrapper {
+}
+.image-mini-slider__slide {
+   opacity:0.2;
+   transition: opasity 0.3s ease 0s;
+}
+.image-mini-slider__slide.swiper-slide-thumb-active{
+   opacity:1;
+}
+.swiper-slide {
+}
+.image-mini-slider__image {
+   position: relative;
+   padding: 0px 0px 30% 0px;
+   cursor:pointer;
+}
+.image-mini-slider__image img{
+   object-fit:cover;
+   position: absolute;
+   width: 100%;height: 100%;top: 0;left: 0;
+}
+.swiper-lazy {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-pagination {
+}
+.swiper-scrollbar {
+}
+//Слайдер внутри слайдера
+.image-in-slider {
+   height: 250px;
+}
+
+.image-in-slider__slide {
+   height: 250px;
+}
+
+.image-in-slider__image img {
+   max-width: 100%;
+}
+.swiper{
+   opacity:1;
+   visibility:visible;
+}
+.elemt {
+   height: 20px;width: 100px;background-color:blue;border:1px solid black;
+}
+//Параллакс-слайдер
+.parallax-slider {
+  // background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-03/1614624765_2-p-fon-lesa-dlya-fotoshopa-2.jpg');
+   height: 800px;
+   border:1px solid red;
+  
+}
+.swiper {
+}
+.parallax-slider__bg {
+    position: absolute;
+      left: 0%;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background: url("https://catherineasquithgallery.com/uploads/posts/2021-03/1614624765_2-p-fon-lesa-dlya-fotoshopa-2.jpg") center no-repeat;
+      background-size: cover;
+}
+.parallax-slider__wrapper {
+}
+.swiper-wrapper {
+}
+.parallax-slider__slide {
+}
+.swiper-slide {
+}
+.parallax-slider__title {
+}
+.parallax-slider__text {
+}
+.parallax-slider__button {
+}
+.swiper-button-prev2 {
+}
+.swiper-button-next2 {
+}
+
+
+
+
+
+

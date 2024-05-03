@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <header>
+      <div class="first">
+         <div class="mic">Microsoft Teams</div>
+         <div class="search"><input type="text" value="Поиск"></div>
+         <a href="#">
+            <div class="cabinet"><img src="rectangle_2_2168.png" alt=""></div>
+         </a>
+      </div>
+      <div class="between visible">
+         <div class="settings">Настройки</div>
+         <div class="personal">Личный кабинет</div>
+   
+      </div>
+      <div class="second">Команды</div>
+   </header>
+   <script>
+      sendUser();
+      async function sendUser() {
+         const response = await fetch("./user", { method: "POST",
+         headers:{
+            'Content-Type':"application.json"
+         }
+          ,body: "Tom Smith" });
+         const responseText = await response.text();
+         console.log("response:"+responseText);
+      }
+      async function getInfo(){
+         let response=await fetch("./user");
+         response=await response.text();
+         console.log("response"+response);
+      }
+      getInfo();
+   </script>
+   
+</body>
+
+</html>

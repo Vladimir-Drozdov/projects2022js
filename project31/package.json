@@ -1,0 +1,16 @@
+{
+  "name": "project31",
+  "version": "1.0.0",
+  "description": "Node JS продолжение",
+  "main": "script.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,186 @@
+@import "nullstyle.scss";
+
+.between {
+  
+   width: 200px;
+   position: fixed;
+   right: 0;
+   height: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(17, 231, 117);
+   //background-color: black;
+}
+
+.visible {
+   position: fixed;
+   z-index: 23;
+   opacity: 0;
+   visibility: hidden;
+}
+
+
+body,
+html {
+   height: 100%;
+}
+
+
+a div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+
+}
+
+
+header {
+   position: fixed;
+   width: 100%;
+   grid-column: 1/3;
+}
+
+.first {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   background-color: blue;
+}
+
+.first div {
+   height: 100%;
+}
+
+.mic {
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.search {
+   color: white;
+}
+
+.cabinet img {
+   width: 30px;
+   height: 100%;
+
+}
+
+input[type="text"] {
+   width: 200px;
+   height: 100%;
+}
+
+.cabinet {
+   color: white;
+}
+
+
+
+.actions {
+   font-size: 10px;
+}
+
+.tasks {
+   font-size: 10px;
+
+}
+
+.sidebar a {
+   border: 1px solid black;
+   flex-grow: 1;
+   font-size: 10px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   width: 60px;
+   margin-top: 29px;
+   height: 95%;
+   position: fixed;
+   background-color: rgb(163, 165, 170);
+   grid-area: sidebar;
+   border: 1px solid black;
+
+}
+
+body{
+   display: grid;
+   grid-template-columns: 60px 18% 77%;
+   //grid-template-rows: 1fr;
+   
+}
+
+
+.second {
+   position: fixed;
+   border:1px solid black;
+   width: 18%;
+   margin-left: 60px;
+   grid-column: 2/2;
+   margin-top: 29px;
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+}
+.second div{
+   border: 1px solid black;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.comands {
+  
+}
+
+.mainheader {
+   grid-column:3/3;
+   //width: 100vw;
+   
+   display: flex;
+   flex-direction: column;
+   // width: 1000px;
+   margin-top: 29px;
+      
+     
+   //right: 0;
+   background-color: rgb(163, 165, 170);
+      
+   border:1px solid black;
+}
+.groupofcomments {
+   flex-grow: 1;
+   margin-top: 26px;
+}
+.comments {
+   background-color: rgb(181, 176, 176);
+   color:black;
+   font-size: 24px;
+   width: 77%;
+   //right: 0;
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   border:1px solid red;
+   
+}
+
+.leave_comment textarea {
+   width: 100%;
+   resize: none;
+}

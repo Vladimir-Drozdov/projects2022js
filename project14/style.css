@@ -1,0 +1,56 @@
+.block1 {
+   width: 100px;height: 100px;background-color: blue;
+}
+
+.block2 {
+   width: 100px;
+      height: 100px;
+      background-color: green;
+}
+
+.block3 {
+   width: 100px;
+      height: 100px;
+      background-color: blue;
+}
+
+.block4 {
+   width: 100px;
+      height: 100px;
+      background-color: yellow;
+}
+
+.block5 {
+   width: 100px;
+      height: 100px;
+      background-color: green;
+}
+
+.block6 {
+   width: 100px;
+      height: 100px;
+      background-color: yellow;
+}
+
+.block7 {
+   width: 100px;
+      height: 100px;
+      background-color: blue;
+}
+
+.block8 {
+   width: 100px;
+   height: 100px;
+   background-color: green;
+}
+.up-button{
+   display: none;
+   background-color: black;
+   color:white;
+   
+   top: 0;left: 0;
+   position:fixed
+}
+.show{
+   display: block;
+}

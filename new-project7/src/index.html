@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>relative units</title>
+</head>
+
+<body>
+   <div><button id="up">Кликните, чтобы увеличить размер шрифта</button></div>
+   <div class="wrapper">
+      <div class="container">
+         <div class="object1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+         <div class="object2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem!</div>
+         <div class="object3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, modi.</div>
+
+      </div>
+   </div>
+
+   <script>
+      let html = document.documentElement;
+      up.onclick = function () {
+         // при помощи JS увеличить размер шрифта html на 2px
+         html.style.fontSize = parseInt(getComputedStyle(html).fontSize) + 2 + 'px';
+      };
+   </script>
+   <script src=" js/app.min.js"></script>
+</body>
+
+</html>

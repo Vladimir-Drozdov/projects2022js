@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS и формы</title>
+</head>
+
+
+<body>
+   <div class="wrapper">
+      <form action="#" enctype="text/plain" name="search">
+         <input type="text" name="key">
+         <input type="text" name="kye" size="15" masxlength="15" valiue="Hello world">
+         <textarea rows="7" cols="40" name="message"></textarea>
+         <input type="checkbox" id="checkbox" name="enabled" checked> <label
+            for="checkbox"><span>Включить</span></label>
+         <input type="radio" name="languages" checked="checked" value="Java" /><span>Java</span>
+         <input type="radio" name="languages" value="C#" /><span>C#</span>
+         <input type="radio" name="languages" value="C++" /><span>C++</span>
+         <select name="lang" id="">
+            <option value="JS" selected>JS</option>
+            <option value="Java">Java</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+         </select>
+         <input type="submit" name="send" value="Отправить" />
+         <input type="reset" value="Очистить">
+         <p><input type="text" name="textInput" placeholder="Введите текст" /></p>
+         <p><input type="text" name="valueInput" placeholder="Введите значение" /></p>
+         <p><input type="button" name="addButton" value="Добавить" />
+            <input type="button" name="removeButton" value="Удалить" />
+         </p>
+      </form>
+      <div id="printBlock"></div>
+      <div id="printBlock2"></div>
+      <div id="printBlock3"></div>
+      <form action="#" name="settings"></form>
+   </div>
+   <div class="wrapper">
+      <form action="#" name="peck">
+         <input type="text" name="firstinput" value="thank" placeholder="firstinput">
+         <p><input type="text" name="secondinput" value="secondinput"></p>
+         <select name="select" id="">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+         </select>
+      </form>
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

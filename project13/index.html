@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>forms</title>
+</head>
+
+<body class="body">
+   <form action="#">
+  <h2>Доставка:</h2>
+      <p class="form_item">
+         <label>
+            Имя питомца для открытка </br>
+            <input type="text" minlength="6" maxlength="20" class="name" name="name" id="nickname" required data-prestine-required-message="Обязательное поле"
+               data-prestine-minlength-message="минимальная длина 6 символов" 
+               data-prestine-maxlength-message="максимальная длина 25 символов">
+         </label>
+      </p>
+      <p class="form_item">
+         Размер:
+         <label> <input type="radio" name="unit" value="s" checked>S</label>
+         <label> <input type="radio" name="unit" value="m">M</label>
+      </p>
+      <p class="form_item">
+         <label for="amount">Количество:</label>
+         <br>
+         <input type="number" id="amount" name="amount" required placeholder="10">
+      </p>
+      <p class="form_item">
+         <select name="delivery" >
+            <option value="Доставка">доставка</option>
+            <option value="Самовывоз">самовывоз</option>
+         </select>
+         <select name="date">
+            <option value="Сегодня">Сегодня</option>
+            <option name="Завтра" >Завтра</option>
+            <option name="На выходных" >На выходных</option>
+         </select>
+      </p>
+      <input type="submit" value="Заказать">
+
+
+</form>
+<script src="pristine.js"></script>
+   <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <input type="text">
+   <script>
+      let input=document.querySelector('input');
+      let send2;
+      input.addEventListener('change', function(){
+         send2=input.value;
+         console.log(send2);
+         UserInfo();
+      })
+      
+      async function UserInfo() {
+            let response = await fetch('./lk', {
+            method: "POST",
+            
+            headers: {
+               "Accept": "application/json",
+               "Content-Type": "application/json" 
+            },
+            
+            body: JSON.stringify({"send":send2})
+         });
+         const response2 = await response.text();
+         console.log('response2:', response2);
+      }
+   </script>
+</body>
+</html>

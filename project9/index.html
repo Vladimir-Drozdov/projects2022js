@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>forms</title>
+</head>
+
+<body>
+   <form action="" method="get" enctype="multipart/form-data">
+     <label> Введите текст<input type="text" name="search" autocomplete="on"></label>
+     <label for="last_name">Введите фамилию</label>
+     <input type="text" name="last name" id="last_name">
+     <label for="password">Введите пароль</label>
+     <input type="password" name="password" value="123" id="password">
+     <label >
+      <input type="submit" name="submit" value="Отправь">
+     </label>
+     <label>
+      <input type="checkbox" checked>Первый вариант
+      <input type="checkbox" checked>Второй вариант
+     </label>
+     <div>
+     <label for="radio" autocomplete="on">
+      <input type="radio" name="group1" value="1">Первый вариант
+      <input type="radio" name="group1" value="2">Второй вариант
+      <input type="radio" name="group1" value="3">Третий вариант
+      <input type="radio" name="group1" value="4">Четвертый вариант
+      </div>
+      <div>
+         <select name="tata" multiple id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+         </select>
+      </div>
+      <input type="file">
+      <input type="hidden">
+     </label>
+   <input type="image" src="" alt="Изображение">
+   <div><label>
+      <input type="date">
+   </label></div>
+   <div>
+      <input type="text" list="brow">
+      <datalist id="brow">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+      </datalist>
+
+
+   </div>
+   <label >
+      Введите число<input type="number" min="80" max="160" step="20" tabindex="1">
+   </label>
+   <label>
+      <input type="search">
+   </label>
+   <label>
+   Введите дату и время<input type="datetime-local"  tabindex="2">
+   </label>
+   <label>
+      Введите неделю и год<input type="week" value="2022-W31" disabled>
+   </label>
+   <label>
+      Введите месяц и год<input type="month"  tabindex="3">
+   </label>
+   <fieldset>
+      <legend>Заголовок</legend>
+<label>
+   Введите дату<input type="date">
+</label>
+<label>
+   Введите время<input type="time">
+</label>
+<label>
+   <input type="range" min="1" max="10">
+</label>
+<label>
+   <output name="sum">Значение по умолчанию</output>
+
+</label>
+<label>
+   <input type="text" name="pattern" pattern="[0-9]{3}-[0-9]{5}" >
+</label>
+<input type="tel" value="+7921" readonly>
+   </fieldset>
+   <select name="variants">
+      <optgroup label="Группа номер 1">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+      </optgroup>
+      <optgroup label="Группа номер 2">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+      </optgroup>
+   </select>
+
+     <div>
+     <textarea name="textarea" id="textarea" cols="30" rows="10" autofocus>Надпись по умолчанию</textarea>
+   </div>
+
+   </form>
+   <ul id="ul" style="border: 1px solid black">
+      <li style="border: 1px solid red"></li>
+      <li style="border: 1px solid red"></li>
+      <li style="border: 1px solid red"></li>
+      <li style="border: 1px solid red"></li>
+      <li style="border: 1px solid red"></li>
+      
+   </ul>
+   <script src="script.js"></script>
+
+</body>
+
+</html>

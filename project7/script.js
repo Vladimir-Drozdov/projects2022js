@@ -1,0 +1,11 @@
+import { fn1 as f1_01, fen2, ar, ar2, ret, default as Das } from "./mod2.js";
+//import User from "./mod2.js";
+console.log(fen2);
+console.log(ar);
+console.log(ar2);
+console.log(ret(4));
+console.log(1);
+//let t = new User('Edd');
+//console.log(t);
+document.getElementById("press1").onclick = f1_01;
+Das();

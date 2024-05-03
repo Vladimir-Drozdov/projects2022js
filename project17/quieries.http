@@ -1,0 +1,58 @@
+//HEAD /posts HTTP/1.1 //без JSON, GET- c JSON
+//POST-отправляет запрос, GET-получает
+//Запросы надо отделять ###
+//В Host ссылка указывается без https://
+//Если указать https:// то ничего не сработает, пишем ссылку без этого!!!
+//Основной сайт лучше в Host, а потом оставшуюся ссылку в GET, иначе 400 Bad Request
+GET /main HTTP/1.1 
+Host: cp.beget.com
+//Authorization: Basic vin200kc:yZSaV57v
+
+###
+
+HEAD /119163-sorority-noise-youre-not-as-____-as-you-think-2017.html HTTP/1.1 
+Host: getmetal.club
+
+###
+//posts - это пусть т.е. сюда ->jsonplaceholder.typicode.com/posts
+POST /posts HTTP/1.1
+Host:jsonplaceholder.typicode.com
+Content-Type: application/json
+Content-Length: 88
+//Одна строка должна быть пустой обязательно
+
+{
+   "title": "Новая публикация",
+   "body": "Текст публикации",
+   "userId": 31339
+}
+
+###
+
+POST / HTTP/1.1
+Host: httpbin.org
+//Content-Type: application/x-www-form-urlencoded
+Content-Type: :application/json
+Content-Length: 88
+
+{
+   "title": "Новая публикация",
+   "body": "Текст публикации",
+   "userId": 31337
+}
+
+###
+//user-логин, passwd-пароль
+GET https://cp.beget.com/login HTTP/1.1
+Authorization: Basic vin200kc:yZSaV57v
+
+###
+
+GET /#rec111563767 HTTP/1.1
+Host: www.asozykin.ru
+
+###
+
+GET / HTTP/1.1
+Host: cp.beget.com/login
+

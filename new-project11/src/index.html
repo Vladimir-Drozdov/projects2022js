@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>vue 3</title>
+</head>
+
+<body>
+   <h1>TTT</h1>
+   <h2>TTT</h2>
+   <h3>TTT</h3>
+   <h4>TTT</h4>
+   <div id="app">
+      <input type="text" value="tt" v-on:input="setMessage" />
+      <p class="p1">{{message}}</p>
+      <h2>Name: {{ name }}</h2>
+      <p>Age: {{ age }}</p>
+      <p>{{ welcome() }}</p>
+      <p>{{ idsplayUser() }}</p>
+      <p>{{ age > 25?'Больше 25 лет':'25 лет или меньше' }}</p>
+      <p>12 часов: {{ welcome(15) }}</p>
+      <p>22 часа: {{ welcome(22) }}</p>
+      <div v-text="name"></div>
+      <div v-text="age"></div>
+      <p v-text="title"></p>
+      <a v-bind:href="link" v-bind:title="title" target="_blank">{{text}}</a>
+      <p v-once>{{message}}</p>
+      <div v-html="message2"></div>
+   </div>
+   <script src="https://unpkg.com/vue@next"></script>
+   <script>
+      const ed = { name: 'Edward', age: 21 };
+      const vueApp = Vue.createApp({
+         data() {
+            return {
+               message: 'Hello Vue 3!',
+               name: 'Tom',
+               age: 20,
+               text: 'Google',
+               title: 'google.com',
+               link: 'https://google.com',
+               message2: '<h1 class="p1">Hello</h1>',
+
+            }
+            //   return ed;
+         },
+         methods: {
+            setMessage(event) {
+               this.message = event.target.value;
+            },
+            welcome() {
+               return "Welcome " + this.name;
+            },
+            idsplayUser() {
+               return "UserInfo: name: " + this.name + " age: " + this.age;
+            },
+            welcome2() {
+               this.age++;
+            },
+            welcome3() {
+               this.welcome2();
+               this.welcome2();
+            },
+            welcome(hour) {
+
+               if (hour > 21) return 'Доброй ночи.';
+               else if (hour > 16) return 'Добрый вечер!';
+               else if (hour > 11) return 'Добрый день';
+               else return 'Доброе утро';
+            },
+         }
+      }).mount('#app');//Прикрепляем объект прилодения Vue к div id="app"
+      // получение данных
+      console.log(vueApp.age);
+      // изменение данных
+      vueApp.age = 25;
+      console.log(vueApp.age);
+      vueApp.welcome3();
+      vueApp.message = "Good bye";
+      console.log(vueApp.message); // Good bye
+   </script>
+   <div id="app2">
+      <button v-on:click="counter++">+</button>
+      <span>{{counter}}</span>
+      <button v-on:click="if(counter>0) counter--;">-</button>
+   </div>
+
+   <script>
+      const vueApp2 = Vue.createApp({
+         data() {
+            return { counter: 0 }
+         }
+      }).mount('#app2');
+   </script>
+   <!--Но дучше так-->
+   <div id="app3">
+      <button @click="increase">+</button>
+      <span>{{counter}}</span>
+      <button @click="decrease">-</button>
+   </div>
+
+   <script>
+      const vueApp3 = Vue.createApp({
+         data() {
+            return { counter: 0 }
+         },
+         methods: {
+            increase() {
+               this.counter++;
+            },
+            decrease() {
+               if (this.counter > 0) this.counter--;
+            }
+         }
+      }).mount('#app3');
+   </script>
+   <div id="app4">
+      <button v-on:click="increase(4, $event), inform()">+</button>
+      <span>{{counter}}</span>
+      <button v-on:keydown="decrease(2)">-</button>
+      <div>{{ status }}</div>
+   </div>
+
+   <script>
+      const vueApp4 = Vue.createApp({
+         data() {
+            return { counter: 0, status: '', }
+         },
+         methods: {
+            increase(n, event) {
+               console.log(event);
+               this.counter = this.counter + n;
+            },
+            decrease(n) {
+               console.log(event);
+               if (this.counter > -9) this.counter = this.counter - n;
+            },
+            inform() {
+               this.status = "Время нажатия кнопки: " + new Date().toLocaleString();
+            },
+         }
+      }).mount('#app4');
+   </script>
+   <!--Двусторонняя привязка-->
+   <div id="app5">
+      <p>Введите имя:
+         <input type="text" value="666" v-model="userName" placeholder="Введите имя" />
+      </p>
+      <p>Ваше имя: {{ userName }}</p>
+   </div>
+
+   <script>
+      const vueApp5 = Vue.createApp({
+         data() {
+            return { userName: 'Tom', message: '' }
+         },
+         methods: {
+            setMessage(event) {
+               this.userName = event.target.value;
+            },
+         }
+      }).mount('#app5');
+   </script>
+   <p>
+      <select v-model="user" id="app6" name="">
+         <option value="">1</option>
+         <option value="">2</option>
+         <option value="6">{{user}}</option>
+      </select>
+
+   </p>
+   <script>
+      const vueApp6 = Vue.createApp({
+         data() {
+            return {
+               user: 4,
+            }
+         },
+         methods: {
+
+         }
+      }).mount('#app6');
+   </script>
+   <div id="app7">
+      <textarea name="" cols="30" rows="10" v-model="use"></textarea>
+      <p>{{use}}</p>
+   </div>
+   <script>
+      const vueApp7 = Vue.createApp({
+         data() {
+            return {
+               use: 4,
+            }
+         }
+      }).mount('#app7')
+   </script>
+   <!--Исчесляемые свойства-->
+   <div id="app8">
+      <input class="input" type="text" v-model="name" />
+      <input class="input" type="text" v-model="age" />
+      <p>Имя: {{name}} Возраст {{age}}</p>
+      <p>{{checkAge()}}</p>
+      <p>{{enabled}}</p>
+   </div>
+
+   <script>
+      Vue.createApp({
+         data() {
+            return { name: 'Tom', age: 25 }
+         },
+         computed: {
+            enabled: function () {
+               console.log("computed");
+               if (this.age > 18) return "доступ разрешен";
+               else return "доступ запрещен";
+            }
+         },
+         methods: {
+            checkAge: function () {
+               console.log("checkAge");
+               if (this.age > 18) return "доступ разрешен";
+               else return "доступ запрещен";
+            }
+         }
+      }).mount('#app8');
+   </script>
+   <!--Сеттеры и геттеры-->
+   <div id="app9">
+      <input class="input" type="text" v-model="firstname" />
+      <input class="input" type="text" v-model="lastname" />
+      <input class="input" type="text" v-model="fullname" />
+      <p>Имя: {{fullname}}</p>
+   </div>
+
+   <script>
+      Vue.createApp({
+         data() {
+            return { firstname: 'Tom', lastname: 'Smith' }
+         },
+         computed: {
+            fullname: {
+               get: function () {
+                  return this.firstname + ' ' + this.lastname;
+               },
+               set: function (newValue) {
+                  const names = newValue.split(' ');
+                  console.log(newValue);
+                  this.firstname = names[0];
+                  this.lastname = names[names.length - 1];
+               }
+            }
+         }
+      }).mount('#app9');
+   </script>
+   <!--Наблюдаемые свойства, как работает непонятно-->
+   <div id="app10">
+      <p>Введите возраст: <input class="input" v-model="age"></p>
+      <p>{{ result}}</p>
+   </div>
+   <script src="https://unpkg.com/vue@next"></script>
+   <script>
+      Vue.createApp({
+         data() {
+            return { age: 0, result: '' }
+         },
+         watch: {
+            age: function (newAge) {
+               if (newAge > 0 && newAge < 110) {
+                  this.check(newAge);
+                  console.log(this.check(newAge));
+               }
+            }
+         },
+         methods: {
+            check: function (value) {
+               this.result = 'Пожалуйста, подождите. Идет проверка...';
+               const vm = this;
+               setTimeout(function () {
+                  if (value > 18) vm.result = 'Доступ открыт';
+                  else vm.result = 'Для возраста ' + value + ' доступ закрыт';
+               }, 2000);
+            }
+         }
+      }).mount('#app10');
+   </script>
+   <div id="app11">
+      <input type="text" v-model="name" class="input">
+      <p>{{result}}</p>
+   </div>
+   <script>
+      Vue.createApp({
+         data() {
+            return { name: 'Edward' }
+         },
+         watch: {
+            name: function (t) {
+               if (name == "Vladimir") {
+                  this.check(t);
+               }
+            }
+         },
+         methods: {
+            check: function (value) {
+               this.result = value;
+            }
+         }
+      }).mount('#app11')
+   </script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

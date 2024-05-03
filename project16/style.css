@@ -1,0 +1,25 @@
+#slider{
+   color:red;
+   background-color: red;
+   box-shadow:  3px 3px 3px  brown ;
+   margin-top: 30px;
+   width: 200px;
+   height: 5px;
+}
+.noUi-connect{
+   background-color: pink;
+}
+
+#slider .noUi-handle{
+   height: 18px;
+      width: 18px;
+      top: -5px;
+      right: -9px;
+      /* half the width */
+      border-radius: 9px;
+}
+.noUi-tooltip{
+   width: 20px;height: 20px;background-color: black; color:white;
+   font-size:8px;
+   
+}

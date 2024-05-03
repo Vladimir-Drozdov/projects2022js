@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>forms</title>
+</head>
+
+<body>
+  <form action="http://vin200kc.beget.tech/" method="post" autocomplete="off">
+   <label for="text">Введите ваше имя</label>
+   <input class="name" type="text" maxlength="25" minlength="6" id="text"
+    name="name" data-prestine-required-message="Обязательное поле"
+     data-prestine-minlength-message="минимальная длина 6 символов" 
+     data-prestine-maxlength-message="максимальная длина 25 символов">
+   <label ><input class="password" type="password" name="password" required></label>
+   <input type="file" name="file">
+   <input type="submit" value="Отправь">
+   <label class="mistake">
+      <output class="mistake">
+      
+      </output>
+   </label>
+  </form>
+  <script src="pristine.js"></script>
+   <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.0",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "nodemon app.js"
+  }
+}

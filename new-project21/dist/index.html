@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Swiper</title>
+</head>
+
+
+<body>
+   <div class="elemt">
+
+   </div>
+   <div class="block">
+      <div class="block__body">
+         <div class="image-slider swiper">
+            <!--Если поставить атрибут dir="rtl" то все будет наоборот-->
+            <div class="swiper-wrapper wrapper">
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" class="swiper-lazy" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div data-hash="slide-2" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                     <!--для lazy loading нужен div с классом  swiper-lazy-preloader и в img нужен атрибут data-src="img/arrow-next.png d src лучше добавлять маленькое однопиксельное изображение и добавить class="swiper-lazy"-->
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-in-slider swiper">
+                     <!--Если поставить атрибут dir="rtl" то все будет наоборот-->
+                     <div class="image-mini-slider__wrapper swiper-wrapper wrapper">
+                        <div class="image-in-slider__slide swiper-slide">
+                           <div class="image-in-slider__image">
+                              <img src="img/Okabe.jpg" alt="Картинка">
+                              <!--  <div class="swiper-lazy-preloader"></div>-->
+                           </div>
+                        </div>
+                        <div class="image-in-slider__slide swiper-slide">
+                           <div class="image-in-slider__image">
+                              <img src="img/Okabe.jpg" alt="Картинка">
+                              <!--  <div class="swiper-lazy-preloader"></div>-->
+                              <!--для lazy loading нужен div с классом  swiper-lazy-preloader и в img нужен атрибут data-src="img/arrow-next.png d src лучше добавлять маленькое однопиксельное изображение и добавить class="swiper-lazy"-->
+                           </div>
+                        </div>
+                        <div class="image-in-slider__slide swiper-slide">
+                           <div class=" image-in-slider__image">
+                              <img src="img/Okabe.jpg" alt="Картинка">
+                              <!--  <div class="swiper-lazy-preloader"></div>-->
+                           </div>
+                        </div>
+                        <div class="image-in-slider__slide swiper-slide">
+                           <div class="image-in-slider__image">
+                              <img src="img/Okabe.jpg" alt="Картинка">
+                              <!--  <div class="swiper-lazy-preloader"></div>-->
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                     <!-- <div class="swiper-pagination"></div>
+                              <div class="swiper-scrollbar"></div>-->
+
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" class="swiper-lazy" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-6" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-7" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-8" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-9" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-10" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-11" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev1"></div>
+            <div class="swiper-button-next swiper-button-next2"></div>
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>-->
+         </div>
+         <!--Миниатюры.Превью.Thumbs-->
+         <div class="image-mini-slider  swiper">
+            <!--Если поставить атрибут dir="rtl" то все будет наоборот-->
+            <div class="image-mini-slider__wrapper swiper-wrapper wrapper">
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="image-mini-slider__slide swiper-slide">
+                  <div class="image-mini-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+         </div>
+         <!--Второй слайдер-->
+         <div class="text-slider swiper">
+            <!--Если поставить атрибут dir="rtl" то все будет наоборот-->
+            <div class="swiper-wrapper wrapper">
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img data-src="img/arrow-next.png" src="img/Okabe.jpg" class="swiper-lazy" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div data-hash="slide-2" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                     <!--для lazy loading нужен div с классом  swiper-lazy-preloader и в img нужен атрибут data-src="img/arrow-next.png d src лучше добавлять маленькое однопиксельное изображение и добавить class="swiper-lazy"-->
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" class="swiper-lazy" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" class="swiper-lazy" alt="Картинка">
+                     <!--  <div class="swiper-lazy-preloader"></div>-->
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-6" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-7" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-8" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-9" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-10" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+               <div data-hash="slide-11" class="swiper-slide">
+                  <div class="image-slider__image">
+                     <img src="img/Okabe.jpg" alt="Картинка">
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <div class="parallax-slider swiper">
+      <div class="parallax-slider__bg" data-swiper-parallax="-20%"></div>
+      <div class="parallax-slider__wrapper swiper-wrapper">
+         <div class="parallax-slider__slide swiper-slide">
+            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">Слайд#1
+            </h2>
+            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+               data-swiper-parallax-duration="500">
+               Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <a href="" class="parallax-slider__button" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">Я
+               кнопка</a>
+         </div>
+         <div class="parallax-slider__slide swiper-slide">
+            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">Слайд#1
+            </h2>
+            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+               data-swiper-parallax-duration="500">
+               Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <a href="" class="parallax-slider__button" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">Я
+               кнопка</a>
+         </div>
+         <div class="parallax-slider__slide swiper-slide">
+            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">Слайд#1
+            </h2>
+            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+               data-swiper-parallax-duration="500">
+               Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <a href="" class="parallax-slider__button" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">Я
+               кнопка</a>
+         </div>
+      </div>
+      <div class=" swiper-button-prev2"></div>
+      <div class=" swiper-button-next2"></div>
+      <!-- <div class="swiper-pagination"></div>
+                  <div class="swiper-scrollbar"></div>-->
+
+   </div>
+
+
+
+
+
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

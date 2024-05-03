@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.block {
+  padding: 50px;
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.block__item {
+  margin-bottom: 30px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+}
+
+.rectangle {
+  width: 250px;
+  height: 150px;
+  background-color: green;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.oval {
+  width: 250px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid green;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid green;
+  border-bottom: 50px solid transparent;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid green;
+  border-top: 50px solid transparent;
+}
+
+.paralleljgram {
+  width: 250px;
+  height: 150px;
+  background-color: green;
+  transform: skew(15deg);
+}
+
+.trapezoid {
+  width: 200px;
+  border-bottom: 100px solid green;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}

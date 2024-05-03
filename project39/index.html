@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Главная страница</h1>
+   <h3>Привет, Express</h3>
+   <h2>Введите данные</h2>
+   <form name="registerForm" action="/post" method="post">
+      <label for="text">Имя</label> <br>
+      <input type="text" name="userName" id="text"> <br><br>
+      <label for="age">Возраст</label>
+      <input type="number" name="userAge"> <br> <br>
+      <input type="submit" id="submit" value="Отправить">
+   </form>
+   <script>
+      const button = document.getElementById("submit");
+      button.addEventListener("click", function (e) {
+         e.preventDefault();
+         let registerForm = document.forms["registerForm"];
+         let userName = registerForm.elements["userName"].value;
+         let userAge = registerForm.elements["userAge"].value;
+         let user = JSON.stringify({ userName: userName, userAge: userAge });
+         console.log(user);
+         let xhr = new XMLHttpRequest();
+         xhr.open("POST", "/user");
+         xhr.setRequestHeader("Content-Type", "application/json");
+         xhr.addEventListener("load", function () {
+            console.log("xhr.response:  "+xhr.response);
+            console.log(typeof xhr.response);
+           // let receivedUser = (xhr.response);
+            //console.log(receivedUser.name, " - ", receivedUser.age);
+         })
+
+         xhr.send(user);
+         xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+               button.value = "Sent";
+            }
+         }
+      });
+   </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BOM</title>
+</head>
+
+
+<body>
+   <button onclick="openWindow()">Click</button>
+   <!--onclick работает когда функция в одном файле с ним -->
+   <script>
+      function openWindow() {
+         const popup = window.open("https://microsoft.com", "_blank", "width=600,height=400,left=500,top=200");
+         setTimeout(() => popup.close(), 1000);
+         //Метод moveTo() позволяет переместить окно на новую позицию относительно левого верхнего угла экрана.
+         popup.moveTo(500, 400);
+
+      }
+   </script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

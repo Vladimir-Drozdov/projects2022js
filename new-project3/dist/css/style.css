@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.textarea {
+  border: 1px solid black;
+  display: block;
+}
+.textarea:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  color: red;
+  display: inline-block;
+  z-index: 4;
+}
+
+.area {
+  margin: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.input {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+.input:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  color: red;
+  display: inline-block;
+  z-index: 4;
+}
+
+.ty {
+  color: red;
+}
+
+.inputt {
+  border: 1px solid black;
+  height: 20px;
+}
+
+.inputr {
+  margin-top: 5px;
+}
+
+.span {
+  margin: 5px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.radio {
+  margin: 30px 0px 0px 30px;
+}
+
+.button {
+  border: 1px solid black;
+}
+
+.coment {
+  border: 1px solid black;
+}
+
+.bigtext {
+  width: 2000px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.table {
+  border: 1px solid red;
+}
+
+.table tr {
+  border: 1px solid black;
+}
+
+.table td {
+  border: 1px solid black;
+}
+
+.predok {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.potomok {
+  border: 1px solid black;
+  width: 100px;
+  height: 200px;
+  margin-left: 30px;
+  overflow: scroll;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.textarea2 {
+  border: 1px solid black;
+}

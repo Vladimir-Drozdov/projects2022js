@@ -1,0 +1,17 @@
+{
+  "main": "script.js",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.2",
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "cross-env PORT=5000 NODE_ENV=production node ./lessons/process.js",
+    "start2": "cross-env TEXT='rtgf34' NODE_ENV=production node ./lessons/file-system.js",
+    "start3": "cross-env MESSAGE='trewq' node ./lessons/events.js",
+    "start4": "nodemon ./lessons/http.js",
+    "start5": "nodemon script.js",
+    "startpath": "node ./lessons/http.js"
+  }
+  
+}

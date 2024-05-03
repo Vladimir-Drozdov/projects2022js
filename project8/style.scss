@@ -1,0 +1,58 @@
+li {
+   background-color: white;
+   //display: none;
+}
+
+li:nth-child(5) {
+   background-color: yellow;
+}
+
+li:first-child {
+   background-color: red;
+}
+li:before{
+   
+   content:"";
+   width: 10px;height: 10px;position: relative;
+   display: block;
+   color:red;
+}
+input[type="text"]{
+   color:white;
+   background-color: red;
+}
+.pool {
+   display: flex;
+   flex-wrap: wrap;
+background-color: grey;
+   margin: 20px;
+   margin-bottom: 40px;
+}
+
+.pool-1 {
+   background-color: grey;
+   margin: 20px;
+   margin-bottom: 40px;
+}
+
+.el {
+   width: 150px;height: 100px;background-color:rgb(196, 21, 21);
+display: flex;justify-content: center; color:black;
+border:1px solid blue;
+}
+
+.el-1 {}
+
+.el-2 {}
+
+.el-3 {}
+
+.el-4 {}
+
+.el-5 {}
+
+.el-6 {}
+.el span{
+   background-color:rgb(28, 28, 232);width: 20px;height: 20px;
+   align-self:center;
+}

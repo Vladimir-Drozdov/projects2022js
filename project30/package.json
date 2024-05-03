@@ -1,0 +1,25 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "NODE JS",
+  "main": "script.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chalk": "chalk",
+    "start":"node script.js",
+    "dev":"nodemon script.js"
+  },
+  "keywords": [
+    "node",
+    "node.js"
+  ],
+  "author": "Vladimir Drozdov <vin2000drozdov@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
